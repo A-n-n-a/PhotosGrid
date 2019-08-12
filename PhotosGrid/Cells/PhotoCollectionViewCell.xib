@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="jIY-F5-w87" customClass="PhotoCollectionViewCell" customModule="PhotosGrid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="M6b-1h-mkY">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="N48-Qf-F78">
+                        <rect key="frame" x="65" y="65" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="M6b-1h-mkY" firstAttribute="top" secondItem="jIY-F5-w87" secondAttribute="top" id="53o-Zc-nB2"/>
+                <constraint firstAttribute="trailing" secondItem="M6b-1h-mkY" secondAttribute="trailing" id="6el-RJ-nFA"/>
+                <constraint firstItem="N48-Qf-F78" firstAttribute="centerY" secondItem="jIY-F5-w87" secondAttribute="centerY" id="H6u-yU-rdE"/>
+                <constraint firstItem="N48-Qf-F78" firstAttribute="centerX" secondItem="jIY-F5-w87" secondAttribute="centerX" id="XQM-yg-BaB"/>
+                <constraint firstItem="M6b-1h-mkY" firstAttribute="leading" secondItem="jIY-F5-w87" secondAttribute="leading" id="YPV-dh-Xc1"/>
+                <constraint firstAttribute="bottom" secondItem="M6b-1h-mkY" secondAttribute="bottom" id="tkU-Jb-vxu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Biy-gj-drm"/>
+            <size key="customSize" width="181" height="146"/>
+            <connections>
+                <outlet property="activityIndicator" destination="N48-Qf-F78" id="thg-UN-nqZ"/>
+                <outlet property="imageView" destination="M6b-1h-mkY" id="Giq-XP-E7Y"/>
+            </connections>
+            <point key="canvasLocation" x="526.81159420289862" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="622" height="415"/>
+    </resources>
+</document>
